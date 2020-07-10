@@ -1,15 +1,14 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html entry.js --public-url /"
   },
-  "dependencies": {
-    "next": "^9.3.3",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12"
   }
 }

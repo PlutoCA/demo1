@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.adsconsultingservice.com	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1594614812|dBLppzlcGlS2
+www.adsconsultingservice.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.adsconsultingservice.com	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=miss#varnish=miss#dc#desc=ae1"
+www.adsconsultingservice.com	TRUE	/	FALSE	1999999999	hs	870774881
+www.adsconsultingservice.com	TRUE	/	FALSE	1999999999	svSession	0de47f9fd98f3ab9b45e2b1da330aa13784e03917e8cc866a3c07b8c42bde75897020df5f329f9a560fd2d3247eb3bd71e60994d53964e647acf431e4f798bcd79c976cce067776331c4c0b67905c008b5298b8c245b128e8f9a09cf327c236d
+

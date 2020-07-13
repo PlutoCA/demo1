@@ -1,523 +1,144 @@
-<!--
- * @Date: 2019-09-26 11:24:02
- * @LastEditors: Pluto
- * @LastEditTime: 2020-05-27 17:07:11
- -->
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./asset/style/reset.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" />
-    <link rel="stylesheet" href="./asset/syalert/syalert.min.css" />
-    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" />
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <script>var syalert=function(){return{syopen:function(id){var dom=$("#"+id);this.sycenter(dom);var name=dom.attr("sy-enter");var type=dom.attr("sy-type");var mask=dom.attr("sy-mask");dom.addClass(name);dom.show();var that=this;$("body").css({"overflow-y":"hidden"});if(mask=="true"){$("body").append("<div class='sy-mask' onclick=\"closeAlert('"+id+"')\"></div>");$(".sy-mask").fadeIn(300)}setTimeout(function(){dom.removeClass(name)},300);if(type=="tips"){setTimeout(function(){that.syhide(id)},1500)}},syhide:function(id){if(typeof id=="undefined"){var dom=$(".sy-alert")}else{var dom=$("#"+id)}var name=dom.attr("sy-leave");dom.addClass(name);$(".sy-mask").fadeOut(300);setTimeout(function(){dom.hide();dom.removeClass(name);$(".sy-mask").remove();$("body").css({"overflow-y":"auto"})},300)},sycenter:function(dom){var mgtop=parseFloat(dom.height()/2);dom.css({"top":"50%","margin-top":"-"+mgtop+"px"})}}}();</script>
-    <title>super happy world Inc</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
+
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
 
 </head>
 
-<body>
-    <!-- nav -->
-    <div class="nav">
-        <div class="nav_content">
-            <div class="logo">
-                <!-- <img src="./asset/image/logo@2x.png" alt="logo"> -->
-            </div>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-            <div class="tags">
-                <ul class="tabs">
-                    <li class="home active">
-                        <a href="./index.html">首页</a>
-                    </li>
-                    <li class="about">
-                        <a href="./about.html">关于我们</a>
-                    </li>
-                    <li class="about">
-                        <a href="./other.html">演示</a>
-                    </li>
-                    <!-- <li onClick="syalert.syopen('alert4')" class="about">
-                        <a>登录</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- main -->
-    <div class="main">
-        <div class="banner"></div>
-        <!-- 浮块 -->
-        <div class="float_block">
-            <div class="float_content">
-                <div class="content_header">
-                    <div class="content_header_content">
-                        <div class="tit">
-                            <div class="icon_line left"></div>
-                            <div class="icon_line right"></div>
-                            <p class="text">
-                                智慧商业解决方案
-                            </p>
-                        </div>
-                        <p class="text">Solution</p>
-                    </div>
-                </div>
-                <div class="float_items">
-                    <div class="item shop">
-                        <div class="item_content">
-                            <div class="tit">
-                                <div class="dotted_line"></div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="img mobile_img">
-                                <img src="./asset/image/img_zhds@2x.png" alt="shop">
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <li><span>跨境电商智能广告投放解决方案</span></li>
-                                    <li><span>电商用户数据智能分析解决方案</span></li>
-                                    <li><span>智能化电商业务系统性能监控分析解决方案</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img src="./asset/image/img_zhds@2x.png" alt="shop">
-                        </div>
-                    </div>
-                    <div class="item bank">
-                        <div class="item_content">
-                            <div class="tit">
-                                <div class="dotted_line"></div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="img mobile_img">
-                                <img src="./asset/image/img_zhyh@2x.png" alt="bank">
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <li><span>智能化审计数据分析解决方案</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img src="./asset/image/img_zhyh@2x.png" alt="bank">
-                        </div>
-                    </div>
-                    <div class="item baoxian">
-                        <div class="item_content">
-                            <div class="tit">
-                                <div class="dotted_line"></div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="img mobile_img">
-                                <img src="./asset/image/img_zhbx@2x.png" alt="baoxian">
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <li><span>智能化业务容灾/扩容解决方案</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <img src="./asset/image/img_zhbx@2x.png" alt="insurance">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 表述 -->
-        <div class="expression">
-            <div class="content_header">
-                <div class="content_header_content">
-                    <div class="tit">
-                        <div class="icon_line left"></div>
-                        <div class="icon_line right"></div>
-                        <p class="text">能力表述</p>
-                    </div>
-                    <p class="text">Ability Expression</p>
-                </div>
-            </div>
-            <div class="expression_content">
-                <div class="items">
-                    <div class="item gray technology">
-                        <div class="c">
-                            <div class="circle center">1</div>
-                            <div class="tit">智能的数据技术服务</div>
-                            <div class="line"></div>
-                            <div class="list">
-                                <ul>
-                                    <li>数据智能抓取</li>
-                                    <li>数据智能分析</li>
-                                    <li>数据智能监控</li>
-                                    <li>数据智能搜索</li>
-                                    <li>数据智能安全</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item green product">
-                        <div class="c">
-                            <div class="circle center">2</div>
-                            <div class="tit">数据智能产品</div>
-                            <div class="line"></div>
-                            <div class="list">
-                                <ul>
-                                    <li>智能推荐系统</li>
-                                    <li>业务数据智能分析系统</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item gray serve">
-                        <div class="c">
-                            <div class="circle center">3</div>
-                            <div class="tit">基于智能数据技术提供的智慧商业服务</div>
-                            <div class="line"></div>
-                            <div class="list">
-                                <ul>
-                                    <li>智能搜索</li>
-                                    <li>智能数据分析</li>
-                                    <li>智能投放</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="expression_content_mobile">
-                <img class="expression_img" src="./asset/image/1.png" alt="expression">
-            </div>
-        </div>
-        <!-- 案例 -->
-        <div class="case">
-            <div class="content_header">
-                <div class="content_header_content">
-                    <div class="tit">
-                        <div class="icon_line left"></div>
-                        <div class="icon_line right"></div>
-                        <p class="text">用户案例</p>
-                    </div>
-                    <p class="text">Customer Case</p>
-                </div>
-            </div>
-            <div class="case_content">
-                <div  class="tabs">
-                    <div id="tabs" class="a">
-                        <div id="first" class="tab active">
-                            <div class="t_c tab1"></div>
-                            <!-- <div class="t_c"><img class="tab1" src="./asset/image/cc_hthd@2x.png" alt="cc"></div> -->
-                        </div>
-                        <div id="second" class="tab ">
-                            <div class="t_c tab2"></div>
-                            <!-- <div class="t_c"><img class="tab2" src="./asset/image/cc_onesecond_dark@2x.png" alt="cc"></div> -->
-                        </div>
-                        <div id="three"  class="tab">
-                            <div class="t_c tab3"></div>
-                            <!-- <div class="t_c"><img class="tab3" src="./asset/image/cc_geniustrainer_dark@2x.png" alt="cc"></div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="all">
-                    <div id="demo1" class="tab_content first">
-                        <div class="show">
-                            <div class="img">
-                                <img src="./asset/image/img_hthd@2x.png" alt="game">
-                            </div>
-                            <div class="detail">
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_xmbj@2x.png" alt=""></div>
-                                        <span>项目背景</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>黑桃互动希望快速找到适合自身的全新营销途径，来吸引更多的用户下载游戏，同时能对产品进行全方位数据监测与分析。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_jjfa@2x.png" alt=""></div>
-                                        <span>解决方案</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>精准定向配合多样素材，提升游戏知名度;</span>
-                                        </li>
-                                        <li>
-                                            <span>打造情怀广告外层，增加游戏用户黏性；</span>
-                                        </li>
-                                        <li>
-                                            <span>精准定向配合多样素材，提升游戏知名度。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_jz@2x.png" alt=""></div>
-                                        <span>价值</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>精准的受众定向，高效触达目标用户；</span>
-                                        </li>
-                                        <li>
-                                            <span>在Facebook平台为期6个月的投放过程中，实现：广告点击率增长30%，游戏安装量
-        提高180%，带动活跃用户增长50%，用户次日留存率稳定在35%左右。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="demo2" class="tab_content second">
-                        <div class="show">
-                            <div class="img">
-                                <img src="./asset/image/img_onesecond@2x.png" alt="img">
-                            </div>
-                            <div class="detail">
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_xmbj@2x.png" alt=""></div>
-                                        <span>项目背景</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>作为一个深受二、三线中年男性青睐的电商手表品牌，汇流信息希望能够提高品牌知名度，利用新营销资源，提升订单量与销量。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_jjfa@2x.png" alt=""></div>
-                                        <span>解决方案</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>根据汇流自身特色和营销目标，找到适合的推广平台;</span>
-                                        </li>
-                                        <li>
-                                            <span>使用优质素材结合平台广告形态来快速吸引目标人群注意力；</span>
-                                        </li>
-                                        <li>
-                                            <span>后台数据监控：其中包括广告曝光量、点击量到转化数据的查看；以及页面浏览量、成交量和获客成本等；</span>
-                                        </li>
-                                        <li>
-                                            <span>订单管理：对于投放后每条广告产生的订单量进行订单管理。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_jz@2x.png" alt=""></div>
-                                        <span>价值</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>精准的受众定向，高效触达目标用户；</span>
-                                        </li>
-                                        <li>
-                                            <span>通过Facebook的广告资源，汇流迅速挖掘了大量目标用户。不仅有效控制获客成本，同时每月的新客获得量稳定且远超预期，在有效的提升品牌知名度的同时，也获得了满意的销售额。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="demo3" class="tab_content three">
-                        <div class="show">
-                            <div class="img">
-                                <img src="./asset/image/img_geniustrainer@2x.png" alt="img">
-                            </div>
-                            <div class="detail">
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_xmbj@2x.png" alt=""></div>
-                                        <span>项目背景</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>2018年，全球游戏市场总规模达8093.9亿人民币，同比增长5.8%。其中，移动游戏、PC游戏及主机游戏分别占据市场总份额的46.4%、22.7%与30.9%。与前几年相比，全球整体移动游戏的市场规模占比在近三年中增幅明显。有关机构预测，到2021年，全球移动游戏市场总份额将占据整体游戏市场的50%以上。对比国内目前游戏大环境情况,游戏出海已经成为国内CP和发行商第一选择。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <div class="tit">
-                                        <div class="icon"><img src="./asset/image/icon_xmjj@2x.png" alt=""></div>
-                                        <span>项目简介</span>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <span>结合国内游戏大环境以及出海行情,星图互联联合国内资深CP联合推出宝可梦系列手游Genius Trainer,为追求宝可梦经典玩法而生,原汁原味还原宝可梦系列游戏的最初的玩法,深受宝可梦海外用户的好评和追捧.目前主要在欧美,东南亚地区发布。</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more_mobile">
-                    <div class="accordion-container">
-                        <img src="./asset/image/2.png" alt="more">
-                    </div>
-                <div class="more">
-                    <div class="accordion-container">
-                        <div class="accordion-item" style="background: #6CD8D8;">
-                            <div class="icon">
-                                <img src="./asset/image/icon_ds@2x.png" alt="icon">
-                            </div>
-                            <p class="line"></p>
-                            <p class="accordion-title">跨境电商</p>
-                        </div>
-                        <div class="accordion-item" style="background: #51BDBD;">
-                            <div class="icon">
-                                <img src="./asset/image/icon_hw@2x.png" alt="icon">
-                            </div>
-                            <p class="line"></p>
-                            <p class="accordion-title">海外产品发行</p>
-                        </div>
-                        <div class="accordion-item" style="background: #6CD8D8;">
-                            <div class="icon">
-                                <img src="./asset/image/icon_yh@2x.png" alt="icon">
-                            </div>
-                            <p class="line"></p>
-                            <p class="accordion-title">银行业</p>
-                        </div>
-                        <div class="accordion-item" style="background: #51BDBD;">
-                            <div class="icon">
-                                <img src="./asset/image/icon_bx@2x.png" alt="icon">
-                            </div>
-                            <p class="line"></p>
-                            <p class="accordion-title">保险业</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 资源技术合作伙伴 -->
-        <div class="partners">
-            <div class="content_header">
-                <div class="content_header_content">
-                    <div class="tit">
-                        <div class="icon_line left"></div>
-                        <div class="icon_line right"></div>
-                        <p class="text">资源技术合作伙伴</p>
-                    </div>
-                    <p class="text">Cooperation Partners</p>
-                </div>
-            </div>
-            <div class="link">
-                <div id="link" class="link_img">
-                    <a href="#link">
-                        <img src="./asset/image/cp_logo@2x.png" alt="link">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="sy-alert sy-alert-model animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert4">
-        <div class="sy-title">登录</div>
-        <div class="sy-content">
-            <div class="form">
-            <p class="input-item"><input id="account" type="text" placeholder="请输入账号" /></p>
-            <p class="input-item"><input id="password" type="password" placeholder="请输入密码" /></p>
-            </div>
-        </div> 
-        <div class="sy-btn">
-            <button onClick="syalert.syhide('alert4')">取消</button>
-            <button onClick="ok()">确定</button>
-        </div> 
-        </div>
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="www.adsconsultingservice.com/index.html">
+						www.adsconsultingservice.com/index.html
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=www.adsconsultingservice.com/index.html">
 
 
-    <!-- 页脚 -->
-    <div class="footer">
-        <div class="footer_content">
-            <p class="white">联系方式</p>
-            <!-- <p>
-                星图互联：contact@starmapnet.com
-            </p> -->
-            <!-- <p>
-                星图智能：contact@starmapnet.ai
-            </p> -->
-            <!-- <p>地址： 广东省深圳市宝安区西乡街道银田工业园碧桂园28仓407</p> -->
-            <p>super happy world Inc</p>
-            <!-- <p class="white">微信公众号</p> -->
-            <!-- <img src="./asset/image/img_code@2x.png" alt="wx_code"> -->
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
 
-        </div>
-    </div>
-    
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
-    <script type="text/javascript">
-        console.log('syalert', syalert)
-        function ok() {
-           const a = $("#account").val()
-           const b = $("#password").val()
-           if (a === "admin" && b === "starmap123") {
-            console.log(a, b)
-                syalert.syhide('alert4');
-                window.location = `${window.location.origin}/other.html`
-           }
-        }
-        $("#first").click(() => {
-            change('first')
-        })
-        $("#second").click(() => {
-            change('second')
-        })
-        $("#three").click(() => {
-            change('three')
-        })
-        function change(type) {
-            $("#tabs").children().each(function(){
-                $(this).attr("class","tab");
-            })
-            $(".all").children().each(function(){
-                $(this).hide()
-            })
-            $(`#${type}`).addClass("active")
-            $(`.${type}`).show() 
-        }
-    </script>
-    <script type="text/javascript">
-        function resize(){
-            // var docEl = document.documentElement
-            // var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
-
-            // function recalc() {
-            //     var designWidth = 1920
-            //     var clientWidth = docEl.clientWidth
-            //     if (!clientWidth || clientWidth > designWidth) return
-            //     docEl.style.fontSize = (16 * clientWidth / designWidth) + 'px'
-            // }
-
-            // if (!document.addEventListener) return
-            // window.addEventListener(resizeEvt, recalc, false)
-            // document.addEventListener('DOMContentLoaded', recalc, false)
-            var w=document.body.clientWidth;
-            if (w <= 960) {
-                $('body').attr('id', 'mobile')
-                document.querySelector("html").style.fontSize= w * 16 / 750 + 'px';
-            } else {
-                $('body').attr('id', '')
-                document.querySelector("html").style.fontSize= w * 16 / 1920 + 'px';                
-            }
-            //rem与px没有实际的关系，根据情况不同比例不同的，这里说的根据情况，实际上就是自己设定比例
-            //假设1rem=20px;那么关系就是(屏幕宽度*20/设计稿宽度)，设计稿的字体大小是16px，那么就等于16/20rem;
-            //假设1rem=16px;那么关系就是(屏幕宽度*16/设计稿宽度)，设计稿的字体大小是16px，那么就等于16/16rem;
-            //注意，谷歌浏览器最小字体为12px,定义关系的时候，不要小于12px;极限是1rem=12px；
-        };
-        window.onresize = () => {
-            resize()
-        };
-        resize();
-    </script>
-    <script src="./asset/js/index.js"></script>
 </body>
 
 </html>
+
+

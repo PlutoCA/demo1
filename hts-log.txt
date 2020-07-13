@@ -1,0 +1,33 @@
+HTTrack3.49-2 launched on Mon, 13 Jul 2020 12:33:31 at https://www.adsconsultingservice.com/
+(httrack https://www.adsconsultingservice.com/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:33:55	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/feed.xml (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/918ed4_117f5e36b6be4029840c8b87e224ffcef001.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/918ed4_117f5e36b6be4029840c8b87e224ffcef002.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/11062b_20125b6ebe434abd96c4d7773634d1dbf001.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/11062b_20125b6ebe434abd96c4d7773634d1dbf002.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_d95ac9cfc5f6495ba038fcc610128760f001.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_d95ac9cfc5f6495ba038fcc610128760f002.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_31d18873a55c4843a8fe6fb115349b95f001.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_31d18873a55c4843a8fe6fb115349b95f002.jpg (from https://www.adsconsultingservice.com/)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_6546b7592f51483da2ab8435a90ab835f001.jpg (from https://www.adsconsultingservice.com/about)
+12:34:10	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_6546b7592f51483da2ab8435a90ab835f002.jpg (from https://www.adsconsultingservice.com/about)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/11062b_9de2dbff3dda403b944bb98c41cb5764f001.jpg (from https://www.adsconsultingservice.com/blog)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/11062b_9de2dbff3dda403b944bb98c41cb5764f002.jpg (from https://www.adsconsultingservice.com/blog)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/918ed4_6806319199df405bbb61e58eef591fa5f001.jpg (from https://www.adsconsultingservice.com/training)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/918ed4_6806319199df405bbb61e58eef591fa5f002.jpg (from https://www.adsconsultingservice.com/training)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_a5d9165850c94fe0896caba4cc2286e3f001.jpg (from https://www.adsconsultingservice.com/coaching)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/65deca_a5d9165850c94fe0896caba4cc2286e3f002.jpg (from https://www.adsconsultingservice.com/coaching)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/, (from https://www.adsconsultingservice.com/privacy-policy)
+12:34:30	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/blog/feed.xml (from https://www.adsconsultingservice.com/blog/)
+12:34:31	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/blog/categories/feed.xml (from https://www.adsconsultingservice.com/blog/categories/leadership)
+12:34:42	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/post/feed.xml (from https://www.adsconsultingservice.com/post/change-is-usually-never-easy-but-it-s-always-necessary)
+12:34:42	Error: 	"Not Found" (404) at link https://www.adsconsultingservice.com/blog/categories/leadership/feed.xml (from https://www.adsconsultingservice.com/blog/categories/leadership/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 11 seconds : 61 links scanned, 38 files written (21495824 bytes overall) [4412192 bytes received at 62143 bytes/sec], 21554571 bytes transferred using HTTP compression in 55 files, ratio 19%, 8.7 requests per connection
+(22 errors, 0 warnings, 0 messages)
